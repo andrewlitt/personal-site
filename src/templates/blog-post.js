@@ -37,7 +37,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-
+        <Link to="/">
+          <center>Go to Blog</center>
+        </Link>
         <ul
           style={{
             display: `flex`,

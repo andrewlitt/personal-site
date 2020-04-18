@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,33 +8,31 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout >
         <SEO
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+        <Profile src="./profile.png" alt="Gatsby Scene" />
         <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
+          <center>Hi, I'm Andrew</center>
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
-        </p>
-        <p>Now go build something great!</p>
+
+        <p>Toronto native, Queen's grad. Carved an internet corner for posts and projects.</p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <center>Go to Blog</center>
         </Link>
       </Layout>
     )
   }
 }
+
+const Profile = styled.img`
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+`
 
 export default IndexPage

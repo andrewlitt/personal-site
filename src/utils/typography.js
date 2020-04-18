@@ -1,17 +1,26 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import BootstrapTheme from "typography-theme-bootstrap"
 
-Wordpress2016.overrideThemeStyles = () => {
+BootstrapTheme.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "li,p": {
+      fontFamily: 'Cabin',
+    },
+    "h1,h2,h3,h4,h5,h6": {
+      fontFamily: 'FuturaLT'
+    },
+    "a": {
+      textDecoration: 'none'
+    }
   }
 }
 
-delete Wordpress2016.googleFonts
+delete BootstrapTheme.googleFonts
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(BootstrapTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

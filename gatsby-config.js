@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Kyle Matthews`,
+    title: `Andrew Litt`,
+    author: `Andrew Litt`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://andrewlitt.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `https://www.linkedin.com/in/littandrew/`,
+      twitter: `alitt416`,
     },
   },
   plugins: [
@@ -70,8 +71,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Andrew Litt`,
+        short_name: `ALitt`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -84,6 +85,15 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["FuturaLT"],
+          urls: ["/fonts/fonts.css"],
+        },
       },
     },
   ],
