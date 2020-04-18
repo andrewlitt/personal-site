@@ -88,11 +88,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         custom: {
-          families: ["FuturaLT"],
-          urls: ["/fonts/fonts.css"],
+          families: [`FuturaLT`],
+          urls: [`/fonts/fonts.css`],
         },
       },
     },
