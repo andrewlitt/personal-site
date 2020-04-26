@@ -1,37 +1,46 @@
 import React from "react"
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from "styled-components"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import { rhythm } from "../utils/typography"
-
-library.add(fab);
-
+ 
 class Layout extends React.Component {
   render() {
     const { children } = this.props
 
   
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <main>{children}</main>
-        </div>
-        <Footer>
-          <a href="mailto:andrew.litt@queensu.ca">email</a> •
-          <a href="https://ca.linkedin.com/in/littandrew"> linkedin</a> •
-          <a href="https://github.com/andrewlitt"> github</a>
-        </Footer>
-      </Wrapper>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+        <Wrapper>
+            <div
+              style={{
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                maxWidth: rhythm(24),
+                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              }}
+            >
+            <main>{children}</main>
+            </div>
+            <Footer>
+              <div>
+                <a target="_blank" href="mailto:andrew.litt@queensu.ca">email</a> •
+                <a target="_blank" href="https://ca.linkedin.com/in/littandrew"> linkedin</a> •
+                <a target="_blank" href="https://github.com/andrewlitt"> github</a>
+              </div>
+              <label class="switch">
+                <input 
+                type="checkbox"
+                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                checked={theme === 'dark'}
+                />
+                <span class="slider round"></span>
+              </label>
+            </Footer>
+        </Wrapper>
+        )}
+      </ThemeToggler>
     )
   }
 }
@@ -45,6 +54,9 @@ const Wrapper = styled.div`
 `
 
 const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 24px;
 `

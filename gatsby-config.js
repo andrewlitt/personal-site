@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Andrew Litt`,
+    title: `a.litt`,
     author: `Andrew Litt`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://andrewlitt.netlify.com/`,
@@ -18,6 +18,8 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-dark-mode`,
+    `gatsby-remark-highlight.js`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -72,13 +74,13 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Andrew Litt`,
-        short_name: `ALitt`,
+        short_name: `a.litt`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     {

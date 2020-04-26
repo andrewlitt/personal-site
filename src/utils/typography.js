@@ -1,3 +1,5 @@
+import './global.css'
+
 import Typography from "typography"
 import BootstrapTheme from "typography-theme-bootstrap"
 
@@ -6,14 +8,20 @@ BootstrapTheme.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
-    "li,p": {
+    "div,li,p": {
       fontFamily: 'Cabin',
+      color: 'var(--textNormal)',
     },
     "h1,h2,h3,h4,h5,h6": {
-      fontFamily: 'FuturaLT'
+      fontFamily: 'FuturaLT',
+      color: 'var(--textTitle)',
     },
     "a": {
-      textDecoration: 'none'
+      textDecoration: 'none',
+      color: 'var(--textLink)',
+    },
+    "body": {
+      background: 'var(--bg)',
     }
   }
 }
