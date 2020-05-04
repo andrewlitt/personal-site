@@ -25,15 +25,15 @@ class Layout extends React.Component {
             </div>
             <Footer>
               <div>
-                <a target="_blank" href="mailto:andrew.litt@queensu.ca">email</a> •
-                <a target="_blank" href="https://ca.linkedin.com/in/littandrew"> linkedin</a> •
-                <a target="_blank" href="https://github.com/andrewlitt"> github</a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:andrew.litt@queensu.ca">email</a> •
+                <a target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/littandrew"> linkedin</a> •
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/andrewlitt"> github</a>
               </div>
               <label class="switch">
                 <input 
-                type="checkbox"
-                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                checked={theme === 'dark'}
+                  type="checkbox"
+                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
                 />
                 <span class="slider round"></span>
               </label>

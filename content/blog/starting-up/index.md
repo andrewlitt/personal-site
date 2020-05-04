@@ -8,12 +8,10 @@ Well - this is it, I made a thing.
  
 I've been thinking about it for awhile now, actually. But the way I wanted it was always what held it up - no Wordpress, I wanted to build the site myself. Make a project out of it. I can code!
 
-So after a few winter breaks of half-assing it, I finally found the time to make fire up the engines for real. I decided to make it using the same tools as another project I did - shout out to [queensbluebird.ca](http://queensbluebird.ca/) - and I got cracking. Maybe I'll do another post for the nerds with those details.
+The real shout out goes to my wisdom teeth. Without the incredibly boring week that followed their departure, I would've found anything more fun than the coding to do. Thanks boys, I won't miss you.
 
-But the real shout out goes to my wisdom teeth. Without the incredibly boring week that followed their departure, I would've found anything more fun than the coding to do. Thanks boys, I won't miss you.
+_Edit: May 2020 - This new version of the blog is now built on [Gatsby](https://www.gatsbyjs.org/), specifically this [starter repo](https://www.gatsbyjs.org/starters/thomaswang/gatsby-personal-starter-blog/). It's also configured with the open source [Netlify CMS](https://www.netlifycms.org/), for simplifying how I make my posts. This version is brought to you by... recent events. We've been inside a bit._
 
-So yeah, thing's made. Welcome to my internet corner, read around as it (hopefully) grows. Hopefully, one day I'll write better content than a YouTube comment section. A man can dream.
-
-Cheers,
+So yeah, thing's made. Welcome to my internet corner, read around as it (hopefully) grows. Cheers.
 
 Litt

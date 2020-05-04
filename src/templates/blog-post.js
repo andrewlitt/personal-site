@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-        <Link to="/">
+        <Link to="/blog">
           <center>Go to Blog</center>
         </Link>
         <ul
@@ -47,6 +47,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            marginTop: '12px'
           }}
         >
           <li>

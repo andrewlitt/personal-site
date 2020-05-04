@@ -93,5 +93,5 @@ It'll be good nights at these sites with fine sights. Not much more I can do unt
 _More to come_
 
 ### Resources Moving Forward
-[PLANNING GOOGLE DOC](https://docs.google.com/spreadsheets/d/1WH8xkuX1qcfsapnztRQ5FrgY5H6l49kQL-Fsa2gtB9I/edit?usp=sharing)
-[COULONGE MAPS](https://www.dropbox.com/s/xbwet9q4ium620e/CoulongeMaps.zip?dl=0)
+* [PLANNING GOOGLE DOC](https://docs.google.com/spreadsheets/d/1WH8xkuX1qcfsapnztRQ5FrgY5H6l49kQL-Fsa2gtB9I/edit?usp=sharing)
+* [COULONGE MAPS](https://www.dropbox.com/s/xbwet9q4ium620e/CoulongeMaps.zip?dl=0)

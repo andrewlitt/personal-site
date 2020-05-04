@@ -21,6 +21,7 @@ body.dark {
 }
 
 .switch {
+  margin-top: 15px;
   position: relative;
   display: inline-block;
   width: 30px;

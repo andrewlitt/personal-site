@@ -1,6 +1,6 @@
 ---
 title: Capstone - Inverter with FPGA SPWM Control
-date: "2019-09-25"
+date: "2019-01-25"
 description: Capstone recaps.
 ---
 ![Lab Bench](./labBench.png)
