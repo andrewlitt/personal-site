@@ -5,14 +5,17 @@ backend:
 media_folder: static/assets
 public_folder: assets
 
+site_url: https://alitt.ca
+display_url: https://alitt.ca
+logo_url: https://alitt.ca/profile.png
+
 collections:
   - name: blog
     label: Blog
     folder: content/blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }

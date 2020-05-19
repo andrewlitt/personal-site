@@ -1,6 +1,6 @@
 ---
 title: "Making Fake Craigslist Posts with Python"
-date: 2020-04-30
+date: 2019-03-12
 ---
 ![header](./header.PNG)
 
