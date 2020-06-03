@@ -35,7 +35,7 @@ The Coulonge is a 217 kilometer long river that feeds into the Ottawa River, whe
 
 ## Getting There
 
-Luckily, where the Coulonge river merges into the Ottawa you'll find [Esprit Whitewater](https://whitewater.ca), a rafting company ranked as one of the best in the world. Nice. They're huge in the whole plan, as they'll be our parking, accommodation, outfitters, chauffeurs, drinking buddies, and guides through the various parts of this trip, respectfully. They're based in Fort-Coulonge - about 115km northwest of Ottawa.
+Luckily, where the Coulonge river merges into the Ottawa you'll find [Esprit Whitewater](https://whitewater.ca), a rafting company ranked as one of the best in the world. Nice. They're huge in the whole plan, as they'll be our parking, accommodation, outfitters, chauffeurs, drinking buddies, and guides through the various parts of this trip, respectively. They're based in Fort-Coulonge - about 115km northwest of Ottawa.
 
 So - leaving on a Friday night, The Guys (members of the trip, herein described as "The Guys"), will promptly hop in readied vehicles to rip out to the Esprit lodge. Here's what we'll be able to pack in the cars:
 * Personal packs
