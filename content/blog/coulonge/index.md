@@ -1,6 +1,6 @@
 ---
-title: Trip Planning - The Coulonge River
-date: "2018-09-23"
+title: Canoe Tripping - The Coulonge River
+date: "2020-09-20"
 description: Whitewater. 10 Days. Paddling. Quebec. Quebecois. Esprit. It's a trip!
 ---
 ![River Header](./riverHeader.png)
@@ -90,8 +90,9 @@ What I suppose I could do is describe the sites where we'll be staying along the
 
 It'll be good nights at these sites with fine sights. Not much more I can do until the spring but plan - you'll find those below.
 
-_More to come_
+## Update - We Did it!
 
-### Resources Moving Forward
-* [PLANNING GOOGLE DOC](https://docs.google.com/spreadsheets/d/1WH8xkuX1qcfsapnztRQ5FrgY5H6l49kQL-Fsa2gtB9I/edit?usp=sharing)
-* [COULONGE MAPS](https://www.dropbox.com/s/xbwet9q4ium620e/CoulongeMaps.zip?dl=0)
+In the covid summer, we got it done. Turns out canoe trips are surprisingly easy to organize when international travel isn't a thing. Big shouts out to Esprit for being total gems!
+
+![River Shuttle](./crew.jpg)
+
