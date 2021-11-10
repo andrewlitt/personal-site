@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Profile src="./profile.png" alt="Gatsby Scene" />
+        <Profile src="./profile.png"/>
         <h1>
           <center>Hi, I'm Andrew</center>
         </h1>

@@ -1,4 +1,2 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-import "typeface-cabin"
+import "@fontsource/dm-sans"

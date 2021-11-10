@@ -9,11 +9,12 @@ BootstrapTheme.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "div,li,p": {
-      fontFamily: 'Cabin, sans-serif',
+      fontFamily: 'DM Sans, sans-serif',
       color: 'var(--textNormal)',
     },
     "h1,h2,h3,h4,h5,h6": {
-      fontFamily: 'FuturaLT, sans-serif',
+      fontFamily: 'DM Sans, sans-serif',
+      fontWeight: 'bold',
       color: 'var(--textTitle)',
     },
     "a": {

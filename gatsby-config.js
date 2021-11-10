@@ -3,11 +3,10 @@ module.exports = {
     // edit below
     title: `a.litt`,
     author: `Andrew Litt`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+    description: `A starter personal blog.`,
     siteUrl: `https://andrewlitt.netlify.com/`,
     social: {
-      linkedin: `https://www.linkedin.com/in/littandrew/`,
-      twitter: `alitt416`,
+      linkedin: `https://www.linkedin.com/in/littandrew/`
     },
   },
   plugins: [
