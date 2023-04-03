@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    // edit below
-    title: `a.litt`,
+
+    title: `alitt`,
     author: `Andrew Litt`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://andrewlitt.netlify.com/`,
@@ -72,7 +72,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Andrew Litt`,
-        short_name: `a.litt`,
+        short_name: `alitt`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
