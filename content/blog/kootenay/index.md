@@ -4,7 +4,7 @@ date: "2023-04-03"
 description: Six days in 'berta. Whitewater. Yeehaw.
 ---
 
-![Kootenay Header](./kootenayHeader.png)
+![Kootenay Header](./kootenay.png)
 
 We're planning another trip.
 
