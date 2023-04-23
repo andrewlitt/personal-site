@@ -5,8 +5,6 @@ description: Whitewater. 10 Days. Paddling. Quebec. Quebecois. Esprit. It's a tr
 ---
 ![River Header](./riverHeader.png)
 
-_I mean if I make I blog I gotta use it, right?_
-
 We're planning a trip. It's gonna take 10 days. This is how we're gonna do it.
 
 ## Itinerary

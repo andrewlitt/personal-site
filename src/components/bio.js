@@ -34,8 +34,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by the <strong>{author}</strong> who lives and works in Toronto.<br/>
-              He keeps his projects <a target="_blank" rel="noopener noreferrer" href="https://github.com/andrewlitt?tab=repositories">here</a>.
+              Written by the <strong>{author}</strong> who lives and works in Toronto.
             </p>
           </Container>
         )
