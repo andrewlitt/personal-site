@@ -1,4 +1,7 @@
 /* global.css */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     --bg: white;

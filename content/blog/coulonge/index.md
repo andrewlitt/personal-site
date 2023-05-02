@@ -50,7 +50,7 @@ More or less.
 
 Now let's drive.
 
-![Esprit Drive](./espritDrive.png)
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1218217.0838277726!2d-78.98940356800934!3d44.831414789847784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!3m2!1d43.653226!2d-79.3831843!4m5!1s0x4cd1170bf058721b%3A0xbee35461c029975e!2sEsprit%20Rafting%20Adventures%2C%20Chemin%20Esprit%2C%20Mansfield-et-Pontefract%2C%20QC!3m2!1d45.8782558!2d-76.7955893!5e0!3m2!1sen!2sca!4v1682994419257!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 It'll be a long haul, but there's still a ways to go before we get onto the river. Once we get there (likely late) on Friday night, we'll have just a short sleep before a shuttle to the rivertop the following morning.
 
@@ -66,7 +66,7 @@ All going well, we hop on a river shuttle Saturday morning to get started on our
 
 Don't let Google Maps fool you - these are backcountry Quebec dirt roads. The drive is... much longer.
 
-![River Shuttle](./riverShuttle.jpg)
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d578299.7812853312!2d-77.27837027650898!3d46.560954911556856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x4cd1170bf058721b%3A0xbee35461c029975e!2sEsprit%2C%203%20Chem.%20Esprit%2C%20Mansfield-et-Pontefract%2C%20Quebec%20J0X%201R0!3m2!1d45.8782558!2d-76.7955893!4m3!3m2!1d46.9905524!2d-77.2886664!5e0!3m2!1sen!2sca!4v1682994532309!5m2!1sen!2sca" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 The Guys will be packed in a van with a trailer hitch carrying canoes, so make sure you're comfy. Once we've truly finally reached our destination we'll be at Lac Pomponne, by the mouth of the Coulonge River.
 
