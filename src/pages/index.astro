@@ -1,18 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = 'My Astro Blog';
-const description = 'The perfect starter for your perfect blog.';
+const title = 'alitt';
+const description = 'The home page for this site.';
 const permalink = Astro.site.href;
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
-      <h1>Hi, I'm Andrew
-      </h1>
-      <p>Toronto native, Queen's grad. Carved an internet corner for posts and projects.</p>
+      <h1>Hi, I'm Andrew</h1>
+      <p>Electrical Engineer working on satellites. Based in Toronto.</p>
+      <p>Writing about canoe trips and side projects.</p>
     </div>
+    <div class="hero-image-container">
+        <img class="hero-image image0" src="/assets/kootenay-clearing.jpg" width="30" height="466">
+        <img class="hero-image image1" src="/assets/kootenay-paddling.jpg" width="550" height="466">
+        <img class="hero-image image2" src="/assets/kootenay-campfire.jpg" width="550" height="466">
+      </div>
   </div>
 </BaseLayout>
 
@@ -27,61 +32,90 @@ const permalink = Astro.site.href;
   }
 
   .home-copy {
-    flex: 1;
-    padding: 0 1em;
+      flex: 1;
+      padding: 0 1em;
   }
 
   .home-copy h1 {
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    line-height: 1.3;
+      font-weight: 700;
+      margin-bottom: 0em;
+      line-height: 1.3;
   }
 
   .home-copy p {
-    font-size: 1.4em;
+      font-size: 1.4em;
   }
 
   .hero-image-container {
-    margin: 0 1em;
-    text-align: center;
-  }
-
-  .hero-image-container picture {
-    display: block;
-    min-height: 250px;
-  }
-
-  .caption {
-    font-size: .8em;
-    font-style: italic;
-    text-align: left;
+      margin: 0 1em;
+      text-align: center;
+      position: relative;
+      width: 100%;
+      max-width: 460px; /* Limit the maximum width of the container */
+      height: auto; /* Adjust height automatically based on the content */
+      aspect-ratio: 3130 / 2075; /* Maintain aspect ratio of the images */
   }
 
   .hero-image {
-    width: 100%;
-    max-width: 550px;
-    margin-bottom: 1em;
+      position: absolute;
+      width: 100%;
+      height: 100%; /* Ensure the images fill the container */
+      object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+      transition: transform 0.3s ease, z-index 0.1s ease;
+      border: 7px solid white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      background: #f8f8f8;
   }
 
-  @media (max-width: 1200px) {
-    p {
-      font-size: 1.2em;
-    }
+  .image0 {
+      z-index: 1;
+      left: 20px; /* Slight horizontal offset */
+      transform: rotate(10deg);
+  }
 
-    .hero-image {
-      max-width: 400px;
-    }
+  .image1 {
+      z-index: 2;
+      left: 10px; /* Slight horizontal offset */
+      top: 10px; /* Slight horizontal offset */
+      transform: rotate(-10deg);
+
+  }
+  .image2 {
+      z-index: 3;
+      left: 10px; /* Slight horizontal offset */
+      top: 10px; /* Slight horizontal offset */
+      transform: rotate(0deg);
+
+  }
+
+
+  @media (max-width: 1200px) {
+      p {
+          font-size: 1.2em;
+      }
+
+      .hero-image-container {
+          max-width: 400px; /* Adjust container width on smaller screens */
+      }
   }
 
   @media (max-width: 800px) {
-    .home-container {
-      flex-direction: column;
-    }
+      .home-container {
+          flex-direction: column;
+      }
 
-    .home-copy {
-      flex: 0;
-      padding-bottom: 2em;
-      text-align: center;
-    }
+      .home-copy {
+          flex: 0;
+          padding-bottom: 2em;
+          text-align: center;
+      }
+
+      .hero-image-container {
+          max-width: 70%; /* Ensure container width is responsive */
+      }
+
+      .hero-image {
+          max-width: 100%; /* Ensure images scale down appropriately */
+      }
   }
 </style>
