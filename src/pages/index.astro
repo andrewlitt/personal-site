@@ -54,6 +54,7 @@ const permalink = Astro.site.href;
       max-width: 460px; /* Limit the maximum width of the container */
       height: auto; /* Adjust height automatically based on the content */
       aspect-ratio: 3130 / 2075; /* Maintain aspect ratio of the images */
+      transition: transform 0.3s ease; /* Add transition for smooth hover effect */
   }
 
   .hero-image {
@@ -61,7 +62,7 @@ const permalink = Astro.site.href;
       width: 100%;
       height: 100%; /* Ensure the images fill the container */
       object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
-      transition: transform 0.3s ease, z-index 0.1s ease;
+      transition: all 0.5s ease; /* Smooth transition for all properties */
       border: 7px solid white;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       background: #f8f8f8;
@@ -88,6 +89,32 @@ const permalink = Astro.site.href;
 
   }
 
+
+  /* Original hover effects - will only apply on desktop */
+  @media (min-width: 768px) {
+    /* Add hover effects */
+    .hero-image-container:hover .image0 {
+        transform: translateY(-90%) rotate(-5deg);
+    }
+
+    .hero-image-container:hover .image1 {
+        transform:  rotate(-5deg);
+    }
+
+    .hero-image-container:hover .image2 {
+        transform:  translateY(90%) rotate(-5deg);
+    }
+
+  }
+
+  /* Remove hover effects for mobile */
+  @media (max-width: 767px) {
+      .hero-image-container:hover .image0,
+      .hero-image-container:hover .image1,
+      .hero-image-container:hover .image2 {
+          transform: none;
+      }
+  }
 
   @media (max-width: 1200px) {
       p {
