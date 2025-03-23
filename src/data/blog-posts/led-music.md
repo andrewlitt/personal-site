@@ -1,6 +1,6 @@
 ---
 title: "Music Reactive LEDs with MSGEQ7 & ATmega328p"
-publishDate: 20 Oct 2019
+publishDate: October 20 2019
 description: Getting LEDs on the beat.
 ---
 ![Header](/assets/blog/led-music/header.png)

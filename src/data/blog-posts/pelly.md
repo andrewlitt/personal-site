@@ -1,42 +1,28 @@
 ---
-title: Canoe Tripping - The Kootenay River
-publishDate: September 3 2023
-description: Six days in 'berta. Western whitewater. Yeehaw.
+title: Canoe Tripping - The Pelly River
+publishDate: March 23 2025
+description: Heading North!
 ---
-<img class='blog-img' src='/assets/blog/kootenay/000016200024.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly_header.png'>
 
-We went west!
+We're planning a trip in the mighty Yukon. Bold? Perhaps. A rip? Certainly.
+
+## The Plan
+
+An idea to paddle in the Great White North came abouts last year, hiking the Chilkoot trail with my local correspondant DH.
+
+
 
 ## Itinerary
 
-Kicking off the trip on Canada Day weekend, The Guys (members of the trip, herein described as "The Guys") set out to see 140km of the icy blue Kootenay River over 7 days.
+<div class='blog-img'><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d975592.482356681!2d-136.1442445500418!3d61.47258809983392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x5154449880bc5381%3A0xe43db7ea64d0354b!2sWhitehorse%2C%20YT!3m2!1d60.7197137!2d-135.052276!4m5!1s0x5150b66882cd1707%3A0x18bf64e7f49b3df!2sFaro%2C%20Yukon!3m2!1d62.2315815!2d-133.3560535!5e0!3m2!1sen!2sca!4v1742760743498!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-1. **<a href='#1'>Calgary to McLeod Meadows (30th)</a>**
-2. **<a href='#2'>McLeod Meadows and Back Again (1st, 38km)</a>**
-3. **<a href='#3'>McLeod Meadows to Horseshoe Rapids (2nd, 24km)</a>**
-4. **<a href='#4'>Horshoe Rapids to shy of Pallister River Confluence (3rd)</a>**
-5. **<a href='#5'>Shy of Pallister to White River Confluence (4th)</a>**
-6. **<a href='#6'>White River Confluence to The Last Set </a>**
-7. **<a href='#7'>The Last Set to Canal Flats (6th, 30km)</a>**
-
-Upon our return, Calgary was on the eve of Stampede. We had fun there as well.
-
-## The River
-
-For our <a href="https://alitt.ca/blog/coulonge/" target="_blank">last trip</a>, The Guys knew it well. This time, less so. Most of us had never been to the BC interior outside gnar season. We had to research.
-
-- **<a href="http://parkscanadahistory.com/publications/kootenay/vermilion-kootenay-paddler-guide.pdf" target="_blank">A Paddler's Guide to the Vermilion-Kootenay River</a>** is an undated publication from Parks Canada and British Columbia Ministry of Forests. This gem details every bend, every set, and all the sights to see along the way. This was our holy bible, and this write-up is mostly plagarism from this resource.
-
-- **<a href="https://paddlingmaps.com/trip/British%20Columbia/154-mcleod-meadows-to-canal-flats" target="_blank">PaddlingMaps: McLeod Meadows to Canal Flats</a>** is a great assist for suggesting campsites, noting features, and generally helped plan how we broke this trip into chunks.
 
 ## Gearing Up
 
-To stay afloat, <a href="https://rockymountainpaddling.com/" target="_blank">Rocky Mountain Paddling Centre</a> in Calgary's west end was our saviour. We rented 5 boats and a trailer, including other gear essentails: paddles, PFD's, throwbags, bailers, and whistles. Selecting mostly 17' Nova Craft Prospectors, these bad boys were fully loaded with airbags to keep us afloat on rogue ducky style sets.
 
-For remaining gear we rented from <a href="https://outdoor-centre.ucalgary.ca/gear-rentals" target="_blank">UofC's Outdoor Centre</a>: barrels, packs, tarps, tents, and whatever campsite needs The Guys did't bring on the flight.
 
 ## The Trip
-<p></p>
 
 ##### General Notes
 
