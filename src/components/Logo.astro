@@ -1,16 +1,61 @@
+<a href="/" class="logo-wrapper">
+  <div class="logo-inner">
+    <img class="logo-front" src="/assets/profile.png" alt="Blog Logo" width="100" height="100" />
+    <img class="logo-back" src="/assets/headshot.jpg" alt="Alternate Logo" width="100" height="100" />
+  </div>
+</a>
+
 <style>
-  img {
-    display: block;
+  .logo-wrapper {
+    display: inline-block;
     width: 75px;
+    height: 75px;
+    perspective: 1000px; /* gives the 3D spin depth */
   }
 
+  .logo-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .logo-wrapper:hover .logo-inner {
+    transform: rotateY(180deg);
+  }
+
+  .logo-front,
+  .logo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .logo-front {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+
+  
+  .logo-back {
+    transform: rotateY(180deg) scale(1.2);
+        border-radius: 50%;
+    border: 3px solid currentColor; /* matches text color; change if needed */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo-back img {
+
+  }
+  /* hide on very small screens */
   @media screen and (max-width: 520px) {
-    img {
+    .logo-wrapper {
       display: none;
     }
   }
 </style>
-
-<a href="/">
-  <img alt="Blog Logo" src="/assets/profile.png" width="100" height="100" />
-</a>

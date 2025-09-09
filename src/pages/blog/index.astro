@@ -11,6 +11,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
 <BaseLayout title={title} description={description} permalink={permalink} current="blog">
   <div class="container">
+    <a href="/" class="home-button">Home</a>
     <h1>Blog</h1>
     {allPosts.map((post, index) => {
       const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
@@ -51,5 +52,37 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
   hr {
     margin: 0px auto;
+  }
+
+  .home-button {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;}
+
+    
+  .home-button {
+    width: 100px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Add prefers-reduced-motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .home-button {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
   }
 </style>

@@ -1,148 +1,196 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
 
-const title = 'alitt';
-const description = 'The home page for this site.';
+const title = 'andrew litt';
+const description = "A very simple, text-first home page—lean and fast, inspired by jackfriks.com.";
 const permalink = Astro.site.href;
+
+let allPosts = await Astro.glob('../data/blog-posts/*.md');
+allPosts = allPosts
+  .sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf())
+  .slice(0, 4); // take only the 4 most recent
+
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
-  <div class="home-container">
-    <div class="home-copy">
-      <h1>Hi, I'm Andrew</h1>
-      <p>Electrical Engineer working on satellites. Based in Toronto.</p>
-      <p>Writing about canoe trips and side projects.</p>
-    </div>
-    <div class="hero-image-container">
-        <img class="hero-image image0" src="/assets/kootenay-clearing.jpg" width="30" height="466">
-        <img class="hero-image image1" src="/assets/kootenay-paddling.jpg" width="550" height="466">
-        <img class="hero-image image2" src="/assets/kootenay-campfire.jpg" width="550" height="466">
-      </div>
-  </div>
+  <main class="wrap">
+    <header class="hero">
+        <div class="holder">
+            <Logo />
+            <div>
+                <h1>andrew litt</h1>
+                <p class="tagline">building satellites, looking for a river to paddle.</p>
+            </div>
+        </div>
+    </header>
+    <section class="links">
+      <a target="_blank" rel="noopener noreferrer" href="mailto:andrew.litt at queensu.ca">email</a> •
+      <a target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/littandrew"> linkedin</a> •
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/andrewlitt"> github</a>
+    </section>
+    <section class="section">
+      <h4>writing</h4>
+      <ul class="post-list">
+        {allPosts.map((post) => {
+          const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
+          return (
+            <li class="post-item">
+              <a class="post-link" href={href}>
+                <div class="post-header">
+                  <span class="post-title">{post.frontmatter.title}</span>
+                  <span class="post-date">{post.frontmatter.publishDate}</span>
+                </div>
+                <span class="post-desc">{post.frontmatter.description}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <p class="footer">
+        <a href="/blog">View all blog posts</a>
+      </p>
+    </section>
+  </main>
 </BaseLayout>
 
 <style>
-  .home-container {
-    align-items: center;
+  .wrap {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 1rem 1.25rem 4rem;
+  }
+
+  .holder {
     display: flex;
-    flex: 1;
-    justify-content: center;
-    margin: 2em 0;
-    min-height: 400px;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
   }
 
-  .home-copy {
-      flex: 1;
-      padding: 0 1em;
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 800;
+    text-transform: lowercase;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem 0;
   }
 
-  .home-copy h1 {
-      font-weight: 700;
-      margin-bottom: 0em;
-      line-height: 1.3;
+  .tagline {
+    margin: 0.25rem 0 0.75rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 
-  .home-copy p {
-      font-size: 1.4em;
+  .social {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.75rem 0 2rem;
   }
 
-  .hero-image-container {
-      margin: 0 1em;
-      text-align: center;
-      position: relative;
-      width: 100%;
-      max-width: 460px; /* Limit the maximum width of the container */
-      height: auto; /* Adjust height automatically based on the content */
-      aspect-ratio: 3130 / 2075; /* Maintain aspect ratio of the images */
-      transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+  .social a { text-decoration: underline; }
+
+  .section { margin: 2rem 0 2.25rem; }
+  .section h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin: 0 0 0.75rem 0;
+  }
+  .links{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.25rem; }
+
+  .list a {
+    display: inline-block;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+  }
+  .list a:hover { border-bottom-style: solid; }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .hero-image {
-      position: absolute;
-      width: 100%;
-      height: 100%; /* Ensure the images fill the container */
-      object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
-      transition: all 0.5s ease; /* Smooth transition for all properties */
-      border: 7px solid white;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      background: #f8f8f8;
+  .post-item {
+    border-bottom: 1px dotted currentColor;
   }
 
-  .image0 {
-      z-index: 1;
-      left: 20px; /* Slight horizontal offset */
-      transform: rotate(10deg);
+  .post-link {
+    display: block;
+    padding: 1rem 0 1.25rem;
+    text-decoration: none;
+    color: inherit;            /* keep same color in all states */
   }
 
-  .image1 {
-      z-index: 2;
-      left: 10px; /* Slight horizontal offset */
-      top: 10px; /* Slight horizontal offset */
-      transform: rotate(-10deg);
-
-  }
-  .image2 {
-      z-index: 3;
-      left: 10px; /* Slight horizontal offset */
-      top: 10px; /* Slight horizontal offset */
-      transform: rotate(0deg);
-
+  .post-header {
+    display: flex;
+    justify-content: space-between; /* pushes title left, date right */
+    align-items: baseline;
+    gap: 1rem;
   }
 
+  .post-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-  /* Original hover effects - will only apply on desktop */
-  @media (min-width: 768px) {
-    /* Add hover effects */
-    .hero-image-container:hover .image0 {
-        transform: translateY(-10vh) rotate(-5deg);
+  .post-date {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+
+  /* description reveal */
+  .post-desc {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-3px);
+    transition:
+      max-height 500ms ease,
+      opacity 500ms ease,
+      transform 500ms ease;
+    margin-top: 0.25rem;
+  }
+
+.post-link:hover .post-title,
+.post-link:focus-visible .post-title {
+  text-decoration: underline; /* underline only */
+}
+
+  .post-link:hover .post-desc,
+  .post-link:focus-visible .post-desc {
+    opacity: 1;
+    max-height: 6rem;   /* enough for a few lines */
+    transform: translateY(0);
+  }
+
+  /* accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .post-desc {
+      transition: none;
     }
-
-    .hero-image-container:hover .image1 {
-        transform:  rotate(-5deg);
-    }
-
-    .hero-image-container:hover .image2 {
-        transform:  translateY(10vh) rotate(-5deg);
-    }
-
   }
 
-  /* Remove hover effects for mobile */
-  @media (max-width: 767px) {
-      .hero-image-container:hover .image0,
-      .hero-image-container:hover .image1,
-      .hero-image-container:hover .image2 {
-          transform: none;
-      }
-  }
 
-  @media (max-width: 1200px) {
-      p {
-          font-size: 1.2em;
-      }
+  .footer { margin-top: 1.5rem; font-size: 0.95rem; }
 
-      .hero-image-container {
-          max-width: 400px; /* Adjust container width on smaller screens */
-      }
-  }
-
-  @media (max-width: 800px) {
-      .home-container {
-          flex-direction: column;
-      }
-
-      .home-copy {
-          flex: 0;
-          padding-bottom: 2em;
-          text-align: center;
-      }
-
-      .hero-image-container {
-          max-width: 70%; /* Ensure container width is responsive */
-      }
-
-      .hero-image {
-          max-width: 100%; /* Ensure images scale down appropriately */
-      }
-  }
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "ss01" on, "liga" on; }
 </style>

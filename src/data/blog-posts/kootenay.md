@@ -1,5 +1,5 @@
 ---
-title: Canoe Tripping - The Kootenay River
+title: The Kootenay Stampede
 publishDate: September 3 2023
 description: Six days in 'berta. Western whitewater. Yeehaw.
 ---

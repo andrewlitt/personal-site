@@ -1,7 +1,7 @@
 ---
-title: Canoe Tripping - The Coulonge River
+title: Return to the Coulonge
 publishDate: September 20 2020
-description: Whitewater. 10 Days. Paddling. Quebec. Quebecois. Esprit. It's a trip!
+description: 10 days of Québécois whitewater.
 ---
 <img class='blog-img' src='/assets/blog/coulonge/riverHeader.png'>
 

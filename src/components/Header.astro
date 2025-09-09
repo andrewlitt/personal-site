@@ -1,6 +1,5 @@
 ---
-import Logo from './Logo.astro'
-import Nav from './Nav.astro'
+import ThemeToggleButton from "./ThemeToggleButton.svelte";
 
 const { current = '' } = Astro.props;
 ---
@@ -8,14 +7,13 @@ const { current = '' } = Astro.props;
 <style>
   header {
     display: flex;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 2em;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically if you give header a height */
+    padding-top: 2em;
     width: 100%;
   }
 </style>
 
 <header>
-  <Logo />
-  <Nav current={current} />
+  <ThemeToggleButton client:load />
 </header>
