@@ -4,7 +4,7 @@ import Logo from '../components/Logo.astro';
 
 const title = 'andrew litt';
 const description = "A very simple, text-first home page—lean and fast, inspired by jackfriks.com.";
-const permalink = Astro.site.href;
+const permalink = Astro.site?.href ?? '/';
 
 let allPosts = await Astro.glob('../data/blog-posts/*.md');
 allPosts = allPosts
@@ -13,7 +13,7 @@ allPosts = allPosts
 
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink}>
+<BaseLayout title={title} description={'A very simple, text-first home page — lean and fast, inspired by jackfriks.com.'} permalink={permalink}>
   <main class="wrap">
     <header class="hero">
         <div class="holder">
@@ -33,7 +33,7 @@ allPosts = allPosts
       <h4>writing</h4>
       <ul class="post-list">
         {allPosts.map((post) => {
-          const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
+          const href = `/blog/${post.file.split('/').pop()!.split('.').shift()!}`;
           return (
             <li class="post-item">
               <a class="post-link" href={href}>
@@ -99,10 +99,23 @@ allPosts = allPosts
     text-transform: lowercase;
     margin: 0 0 0.75rem 0;
   }
-  .links{
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0; /* hide stray text nodes (legacy separators) */
     margin-bottom: 1.5rem;
+  }
+
+  .links a { text-decoration: underline; font-size: 1rem; }
+
+  .links a + a::before {
+    content: '·';
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
   }
   .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.25rem; }
 
@@ -113,6 +126,11 @@ allPosts = allPosts
     border-bottom: 1px dashed currentColor;
   }
   .list a:hover { border-bottom-style: solid; }
+
+  /* override previous pseudo-element separator to avoid garbled glyphs */
+  .links a + a::before { content: '' !important; }
+  /* add a border-based separator that wraps nicely */
+  .links a + a { border-left: 1px solid var(--text-secondary); padding-left: 0.75rem; }
 
   .post-list {
     list-style: none;
@@ -185,6 +203,29 @@ allPosts = allPosts
   @media (prefers-reduced-motion: reduce) {
     .post-desc {
       transition: none;
+    }
+  }
+
+  /* Mobile layout tweaks */
+  @media (max-width: 640px) {
+    .holder {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .post-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .post-title {
+      white-space: normal; /* allow wrapping on small screens */
+    }
+
+    .post-date {
+      font-size: 0.9rem;
     }
   }
 
