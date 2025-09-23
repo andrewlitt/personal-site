@@ -1,7 +1,11 @@
 ---
 title: I'm Starting a Blog, I Guess
 publishDate: 26 Aug 2018 
+publishDateISO: 2018-08-26
 description: This is the first one.
+tags:
+  - blogging
+  - personal website
 ---
 
 Well - this is it, it exitst.

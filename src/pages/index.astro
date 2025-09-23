@@ -3,17 +3,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Logo from '../components/Logo.astro';
 
 const title = 'andrew litt';
-const description = "A very simple, text-first home page—lean and fast, inspired by jackfriks.com.";
+const description = 'Andrew Litt blog';
 const permalink = Astro.site?.href ?? '/';
+const siteOrigin = Astro.site?.origin ?? 'https://alitt.ca';
+const keywords = 'Andrew Litt, hardware projects, whitewater canoeing, personal blog';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Andrew Litt',
+  url: siteOrigin,
+  sameAs: [
+    'https://ca.linkedin.com/in/littandrew',
+    'https://github.com/andrewlitt',
+  ],
+  knowsAbout: ['canoe tripping', 'whitewater canoeing', 'hardware development', 'satellites', 'embedded hardware' ],
+  email: 'mailto:andrew.litt at queensu.ca',
+};
 
 let allPosts = await Astro.glob('../data/blog-posts/*.md');
-allPosts = allPosts
-  .sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf())
-  .slice(0, 4); // take only the 4 most recent
+const parseDate = (post: any) =>
+  new Date(post.frontmatter.publishDateISO ?? post.frontmatter.publishDate).valueOf();
+allPosts = allPosts.sort((a, b) => parseDate(b) - parseDate(a)).slice(0, 4); // take only the 4 most recent
 
 ---
 
-<BaseLayout title={title} description={'A very simple, text-first home page — lean and fast, inspired by jackfriks.com.'} permalink={permalink}>
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  keywords={keywords}
+  schema={personSchema}
+>
   <main class="wrap">
     <header class="hero">
         <div class="holder">

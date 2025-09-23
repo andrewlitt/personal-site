@@ -1,13 +1,19 @@
 ---
 title: A Peruse Down the Pelly
 publishDate: July 19 2025
+publishDateISO: 2025-07-19
 description: Heading north, real north.
+ogImage: /assets/blog/pelly/pelly-header.jpg
+tags:
+  - Pelly River
+  - Yukon canoe trip
+  - northern expedition
 ---
 _There’s a land where the mountains are nameless,_<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_And the rivers all run God knows where;_<br />
 <sup> - Spell of the Yukon, by Robert Service </sup><br /><br />
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-header.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-header.jpg' alt='Paddlers launching canoes onto the Pelly River in Yukon'>
 
 We took a trip to the mighty Yukon. It was a rip.
 
@@ -35,7 +41,7 @@ While there are many excellent waters in the Yukon, we opted to save on floatpla
 
 The Pelly begins in the Mackenzie Mountains, flowing at a quick pace in a westerly way before joining with the mighty Yukon River. We paddled 290km of the Pelly, past ruins of trapper cabins and hoodoos galore.
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-overview.png'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-overview.png' alt='Google Earth overview of the Pelly River canoe route'>
 <p></p>
 
 ### <p id="Guide">The Guide</p>
@@ -48,7 +54,7 @@ You can purchase the guidebook from <a href="https://www.yukonbooks.com/shop/cus
 
 Setting us up with boats, paddles, lifejackets, and shuttles, we went with <a href="https://upnorthadventures.com/" target="_blank">Up North Adventures</a> in Whitehorse. I cannot recommend them enough! Truly an amazing outfitter.
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-outfitter.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-outfitter.jpg' alt='Canoe fleet at Up North Adventures in Whitehorse Yukon'>
 
 ...and that was it! Turnkey service from Up North. Easy peasy.
 
@@ -69,7 +75,7 @@ The crew hopped in our shuttle and began our journey. With stops just outside of
 
 We dropped at a bridge just shy of town. Yanking our gear out of the van quickly, we thanked our driver so he could begin his journey back south.
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-drop.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-drop.jpg' alt='Canoes packed at the Pelly River put-in near Faro Yukon'>
 
 And we were off! Right away, the river moved faster than I thought. It was also cold - not as cold as the Kootenay - but certainly siltier. A light brown, a change from the icey blue of interior BC.
 
@@ -77,7 +83,7 @@ We made 24km in just a few hours, arriving around dinner. Like I said, the river
 
 Rose's location is one of several storied locations in the <a href='#Guide'>guidebook</a>. We camped across the river from the site of Rose's cabin, with Rose Mountain in the backdrop.
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-roses-location.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-roses-location.jpg' alt='Roses Location campsite along the Pelly River'>
 
 Man's best friend, Russ, came too.
 
@@ -85,7 +91,7 @@ Man's best friend, Russ, came too.
 
 From Rose's, we set out on our first real day. The river has changed from when the guidebook last recorded - we went past Little Fishhook rapids without even noticing it, while hitting an unmarked set just a few kilometers later. We stayed at Big Fishhook rapids after that, which itself wasn't much fuss either. 
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-big-fishhook.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-big-fishhook.jpg' alt='Big Fishhook Rapids campsite on the Pelly River'>
 
 The campsite sat by the Glenlyon river, a welcome source of clear water. Unfortunately, no fish were found there.
 
@@ -97,7 +103,7 @@ As we approached a stretch called _The Detour_, we were briefly taken off the ri
 
 The rest of our day was spent in the sunshine.
 
-<img class='blog-img' src='/assets/blog/pelly/pelly-storm.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-storm.jpg' alt='Thunderstorm rolling over the Pelly River valley'>
 
 We stopped past _The Detour_ on a gravel bank as the river began to bend right. Unmarked on our guide, at 62°43'53"N 134°43'11"W, to be precise. A rocky beach, it turned to nice sand about 100m in from the water.
 

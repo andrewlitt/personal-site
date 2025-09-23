@@ -11,13 +11,65 @@ export async function getStaticPaths() {
 }
 
 const { Content, frontmatter } = Astro.props.post;
-const { title, description, publishDate } = frontmatter;
+const {
+  title,
+  description,
+  publishDate,
+  publishDateISO,
+  updatedDate,
+  updatedDateISO,
+  tags: incomingTags = [],
+  ogImage,
+} = frontmatter;
 const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site?.href ?? '/'}blog/${slug}`;
+const tagList = Array.isArray(incomingTags)
+  ? incomingTags
+  : incomingTags
+    ? [incomingTags]
+    : [];
+const siteOrigin = Astro.site?.origin ?? '';
+const absoluteOgImage = ogImage ? new URL(ogImage, siteOrigin).href : undefined;
+const publishedInput = publishDateISO ?? publishDate;
+const updatedInput = updatedDateISO ?? updatedDate ?? publishedInput;
+const publishedTime = publishedInput ? new Date(publishedInput).toISOString() : undefined;
+const modifiedTime = updatedInput ? new Date(updatedInput).toISOString() : publishedTime;
+const author = 'Andrew Litt';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description,
+  image: absoluteOgImage ? [absoluteOgImage] : undefined,
+  datePublished: publishedTime,
+  dateModified: modifiedTime,
+  author: {
+    '@type': 'Person',
+    name: author,
+    url: new URL('/', siteOrigin || permalink).href,
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': permalink,
+  },
+  keywords: tagList.length ? tagList.join(', ') : undefined,
+};
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
-  <header>
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="blog"
+  ogType="article"
+  ogImage={absoluteOgImage}
+  publishedTime={publishedTime}
+  modifiedTime={modifiedTime}
+  author={author}
+  tags={tagList}
+  schema={schema}
+>
+  <header id="top">
     <a href="/" class="home-button">Home</a>
     <h1>{title}</h1>
     <p>{publishDate} ~ {readingTime}</p>
@@ -29,6 +81,9 @@ const permalink = `${Astro.site?.href ?? '/'}blog/${slug}`;
     </article>
     <hr />
     <Bio />
+    <div class="back-to-top">
+      <a href="#top">Back to top ↑</a>
+    </div>
   </div>
 </BaseLayout>
 
@@ -92,6 +147,24 @@ const permalink = `${Astro.site?.href ?? '/'}blog/${slug}`;
     margin: 0 auto;
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
+  }
+
+  .back-to-top {
+    margin: 2rem 0 0;
+    text-align: center;
+  }
+
+  .back-to-top a {
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .back-to-top a:hover,
+  .back-to-top a:focus-visible {
+    text-decoration: underline;
   }
 
   @keyframes fadeInUp {

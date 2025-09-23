@@ -2,18 +2,41 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = 'Blog';
-const description = 'Latest articles.';
+const description = 'Covering canoe expeditions, hardware builds, and product experiments.';
 const permalink = `${Astro.site?.href ?? '/'}blog`;
+const siteOrigin = Astro.site?.origin ?? 'https://alitt.ca';
+const keywords = 'canoe trip reports, hardware projects, technology development, product management, Andrew Litt blog';
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: title,
+  description,
+  url: permalink,
+  publisher: {
+    '@type': 'Person',
+    name: 'Andrew Litt',
+    url: siteOrigin,
+  },
+};
 
 let allPosts = await Astro.glob('../../data/blog-posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+const parseDate = (post: any) =>
+  new Date(post.frontmatter.publishDateISO ?? post.frontmatter.publishDate).valueOf();
+allPosts = allPosts.sort((a, b) => parseDate(b) - parseDate(a));
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="blog"
+  keywords={keywords}
+  schema={blogSchema}
+>
   <div class="container">
     <a href="/" class="home-button">Home</a>
     <h1>Blog</h1>
-    {allPosts.map((post, index) => {
+    {allPosts.map((post) => {
       const href = `/blog/${post.file.split('/').pop()!.split('.').shift()!}`;
       return (
         <div>
