@@ -3,7 +3,7 @@ title: "Music Reactive LEDs with MSGEQ7 & ATmega328p"
 publishDate: October 20 2019
 description: Getting LEDs on the beat.
 ---
-![Header](/assets/blog/led-music/header.png)
+![Header](/assets/blog/led-music/led-music-header.png)
 
 _Progress to the final product_
 
@@ -15,7 +15,7 @@ First off, this project is not a unique one - it's inspired by [a sizable number
 
 The core function of the project depends on an IC from MSI, the MSGEQ7. It's a seven-band equalizer filter, taking an external audio input and outputting the relative 'loudness' of a set of typical frequencies present. Since we can get this in near real-time, we can translate the loudness into brightness of LEDs. Simple I/O! Just need some more electronics to do it with.
 
-![MSGEQ7](/assets/blog/led-music/msgeq7.PNG)
+![MSGEQ7](/assets/blog/led-music/led-music-msgeq7.png)
 
 _Summary of the MSGEQ7 Operation_
 
@@ -25,18 +25,18 @@ For this, we'll be using an ATmega328p microcrontroller with and Arduino bootloa
 
 First off - the MSGEQ7 support circuitry. This matches the 'typical application' circuit in the datasheet. Nothing to change here.
 
-![msgeq7 circuit](/assets/blog/led-music/msgeq7circuit.PNG)
+![msgeq7 circuit](/assets/blog/led-music/led-music-msgeq7-circuit.png)
 
 Next, the microcontroller. Support circuitry on the left, I/O on the right. All unused I/O was kept available for future use with F breakout headers.
 
-![atmega328](/assets/blog/led-music/atmega328.PNG)
+![atmega328](/assets/blog/led-music/led-music-atmega328.png)
 
 Below, all the auxiliary circuitry.
 - Power Supply: The board will use the 12V power supply that came with the LEDs, stepped down with a linear regulator to 5V for the electronics.
 - Audio Input: Wiring from the audio jack to the MQGEQ7 input, as suggested by the datasheet.
 - LED Strip Output: Breakout headers connecting to the LEDs, and the transistor wiring.
 
-![support](/assets/blog/led-music/support.png)
+![support](/assets/blog/led-music/led-music-support.png)
 
 ## Making the PCB
 
@@ -51,7 +51,7 @@ In consideration, the goals in the design process were:
 - Keeping the board open to future improvements by including breakouts for unused ATmega pins
 - Having it be small!
 
-![PCB2](/assets/blog/led-music/PCB2.PNG)
+![PCB2](/assets/blog/led-music/led-music-pcb-2.png)
 
 Eventually, this is the design that was reached! Analog and Digital are separate on the board, running back to the power supply without crossing over. In breaking out analog pins 1-5 with traces on the bottom, it acts as a further barrier between the two. Eventually coming to this scheme put the grounding worries to rest.
 
@@ -65,7 +65,7 @@ As  is shown in the earlier figure - it takes in an audio input, and gives a DC 
 
 Timing diagram shown below.
 
-![msgeq7_timing](/assets/blog/led-music/msgeq7_timing.PNG)
+![msgeq7_timing](/assets/blog/led-music/led-music-msgeq7-timing.png)
 
 Alright, so we now have the output of the chip. What to do with it? Turns out if you directly map the output to gate voltages, the result is quite epileptic. So, I added a signal floor and a moving average filter to smoothen things out.
 
@@ -190,4 +190,4 @@ If you have any questions, feel free to reach out.
 
 Feel free to check out the source on [GitHub](https://github.com/andrewlitt/Lightshow-2.0)!
 
-![footer](/assets/blog/led-music/footer.png)
+![footer](/assets/blog/led-music/led-music-footer-diagram.png)

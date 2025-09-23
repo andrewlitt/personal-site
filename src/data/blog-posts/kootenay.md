@@ -3,7 +3,7 @@ title: The Kootenay Stampede
 publishDate: September 3 2023
 description: Six days in 'berta. Western whitewater. Yeehaw.
 ---
-<img class='blog-img' src='/assets/blog/kootenay/000016200024.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-river-header.jpg'>
 
 We went west!
 
@@ -75,7 +75,7 @@ On this day, we got out of the park. Once beyond the borders of Kootenay Nationa
 
 We camped on the north shore. It's a nice open, grassy area. Picnic bench included.
 
-<img class='blog-img' src='/assets/blog/kootenay/000016210024.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-horseshoe-camp.jpg'>
 
 #### <p id="4">4. Horseshoe Rapids to shy of Pallister River Confluence  (16km)</p>
 
@@ -89,7 +89,7 @@ Looking at it from above, it's clear the site we found is part of a network of A
 
 It was a nice spot. 
 
-<img class='blog-img' src='/assets/blog/kootenay/000016210016.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-pallister-camp.jpg'>
 
 #### <p id="5">5. Before Pallister to to White River Confluence (20km)</p>
 
@@ -99,7 +99,7 @@ Another easy day. This time we ended at White River's intersection with the Koot
 
 On the gravel flat near the confluence, we had ourselves a perfect bonfire.
 
-<img class='blog-img' src='/assets/blog/kootenay/000016210004.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-white-river-bonfire.jpg'>
 
 _(To our surprise, there was no fire ban during our trip. Lucky again.)_
 
@@ -107,7 +107,7 @@ _(To our surprise, there was no fire ban during our trip. Lucky again.)_
 
 A _super_ easy day, with only one or two proper sets. On the way, you pass what's known as Gibraltar Rock. There's apparently a hike up the backside, but we didn't attempt it. 
 
-<img class='blog-img' src='/assets/blog/kootenay/000016200003.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-gibraltar-rock.jpg'>
 
 We found a campsite after the last marked set in the guide, on river right.
 
@@ -115,7 +115,7 @@ We found a campsite after the last marked set in the guide, on river right.
 
 The afternoon consisted of sunbathing and dam engineering.
 
-<img class='blog-img' src='/assets/blog/kootenay/000016210002.jpg'>
+<img class='blog-img' src='/assets/blog/kootenay/kootenay-dam-engineering.jpg'>
 
 
 #### <p id="7">7. The Last Set to Canal Flats Bridge (19km)</p>

@@ -2,7 +2,7 @@
 title: "Making Fake Craigslist Posts with Python"
 date: 2019-03-12
 ---
-![header](./header.PNG)
+![header](./craigslist-header.png)
 
 I've been looking to do a bit more Python. In a mix of inspiration from an [old hackathon project](https://devpost.com/software/personalit-tweet) and the [Congratulations Podcast](https://www.congratulationspod.com/) - lets generate some fake craigslist posts with Python.
 

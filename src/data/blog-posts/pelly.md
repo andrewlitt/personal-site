@@ -77,7 +77,7 @@ We made 24km in just a few hours, arriving around dinner. Like I said, the river
 
 Rose's location is one of several storied locations in the <a href='#Guide'>guidebook</a>. We camped across the river from the site of Rose's cabin, with Rose Mountain in the backdrop.
 
-<img class='blog-img' src='/assets/blog/pelly/roses-location.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-roses-location.jpg'>
 
 Man's best friend, Russ, came too.
 
@@ -85,7 +85,7 @@ Man's best friend, Russ, came too.
 
 From Rose's, we set out on our first real day. The river has changed from when the guidebook last recorded - we went past Little Fishhook rapids without even noticing it, while hitting an unmarked set just a few kilometers later. We stayed at Big Fishhook rapids after that, which itself wasn't much fuss either. 
 
-<img class='blog-img' src='/assets/blog/pelly/big-fishhook.jpg'>
+<img class='blog-img' src='/assets/blog/pelly/pelly-big-fishhook.jpg'>
 
 The campsite sat by the Glenlyon river, a welcome source of clear water. Unfortunately, no fish were found there.
 

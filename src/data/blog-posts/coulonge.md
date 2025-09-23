@@ -3,7 +3,7 @@ title: Return to the Coulonge
 publishDate: September 20 2020
 description: 10 days of Québécois whitewater.
 ---
-<img class='blog-img' src='/assets/blog/coulonge/riverHeader.png'>
+<img class='blog-img' src='/assets/blog/coulonge/coulonge-river-header.png'>
 
 We ripped a trip to Quebec. It took 10 days. This is how we did it.
 
@@ -103,4 +103,4 @@ It'll be good nights at these sites with fine sights. Not much more I can do unt
 
 In the COVID summer of 2020, we got it done. Turns out canoe trips are surprisingly easy to organize when international travel isn't a thing. Big shouts out to Esprit for being total gems!
 
-<img class='blog-img' src='/assets/blog/coulonge/crew.jpg'>
+<img class='blog-img' src='/assets/blog/coulonge/coulonge-crew.jpg'>
