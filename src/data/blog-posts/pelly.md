@@ -15,7 +15,7 @@ _There’s a land where the mountains are nameless,_<br />
 
 <img class='blog-img' src='/assets/blog/pelly/pelly-header.jpg' alt='Paddlers launching canoes onto the Pelly River in Yukon'>
 
-We took a trip to the mighty Yukon. It was a rip.
+We took a trip to the mighty Yukon. It was a rip. a
 
 ## Itinerary
 
