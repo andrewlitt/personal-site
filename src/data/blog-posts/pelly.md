@@ -15,7 +15,7 @@ _There’s a land where the mountains are nameless,_<br />
 
 <img class='blog-img' src='/assets/blog/pelly/pelly-header.jpg' alt='Paddlers launching canoes onto the Pelly River in Yukon'>
 
-We took a trip to the mighty Yukon. It was a rip. a
+We took a trip to the mighty Yukon. It was a rip.
 
 ## Itinerary
 
@@ -46,7 +46,7 @@ The Pelly begins in the Mackenzie Mountains, flowing at a quick pace in a wester
 
 ### <p id="Guide">The Guide</p>
 
-The planning of this trip **would not have been possible** without the Pelly River guidebook from <a href="https://riversnorthonline.com/the-books/guide-books/pelly-river" target="_blank">Rivers North Publications.</a>. A family business, their guidebook was thorough and truly indulges you in the history of the land you're in. The stories of each location within were a treat, and greatly enjoyed by all of those on the trip.
+The planning of this trip **would not have been possible** without the Pelly River guidebook from <a href="https://riversnorthonline.com/the-books/guide-books/pelly-river" target="_blank">Rivers North Publications</a>. A family business, their guidebook was thorough and truly indulges you in the history of the land you're in. The stories of each location were a treat, and greatly enjoyed by all of those on the trip.
 
 You can purchase the guidebook from <a href="https://www.yukonbooks.com/shop/customer/product.php?productid=2520" target="_blank">Yukon Books</a>. I hope you support these great Canadians.
 
@@ -105,11 +105,11 @@ The rest of our day was spent in the sunshine.
 
 <img class='blog-img' src='/assets/blog/pelly/pelly-storm.jpg' alt='Thunderstorm rolling over the Pelly River valley'>
 
-We stopped past _The Detour_ on a gravel bank as the river began to bend right. Unmarked on our guide, at 62°43'53"N 134°43'11"W, to be precise. A rocky beach, it turned to nice sand about 100m in from the water.
+We stopped past _The Detour_ on a gravel bank as the river began to bend right. This campsite was unmarked on our guide. A rocky beach, it turned to nice sand about 100m in from the water. Location was 62°43'53"N 134°43'11"W, to be precise.
 
 #### <p id="4">4. Past the Detour to Before Cut-off Rapids</p>
 
-A number of The Guys, nerves wracked from a stormy day, spent the early hours of this day in indulgence. That said, they did not feel their best by sunrise. Lucky for them, this was a short day!
+A number of The Guys - nerves wracked from a stormy day - spent the early hours of this day in indulgence. They were not in fine form by sunrise. Lucky for them, this was a short day!
 
 Our aim was 
 
@@ -119,11 +119,15 @@ A longer day than expected. We set out the day with a campsite in mind.
 
 #### <p id="6">6. McMillan Confluence to Needlerock Creek</p>
 
-
+_More to come_
 #### <p id="7">7. Needlerock Creek to Pelly Crossing</p>
+
+_More to come_
 
 <div class='blog-img'><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1414063.3259240387!2d-138.59322027620547!3d61.74369348608089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x514e2eec14cd51e1%3A0x3a02c1697ff0e317!2spelly%20crossing!3m2!1d62.817978999999994!2d-136.568795!4m5!1s0x5154449880bc5381%3A0xe43db7ea64d0354b!2swhitehorse!3m2!1d60.7197137!2d-135.052276!5e0!3m2!1sen!2sca!4v1756045037540!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
 #### <p id="8">8. Tatshenshini River Rafting</p>
+
+_More to come_
 
 <div class='blog-img'><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d504100.286424407!2d-136.944591121981!3d60.426365269758165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x5154449880bc5381%3A0xe43db7ea64d0354b!2sWhitehorse%2C%20YT!3m2!1d60.7197137!2d-135.052276!4m5!1s0x56ab3999ca502e13%3A0xf9865eab23b940f1!2sTatshenshini%20River%20Put-In%2C%20Yukon!3m2!1d60.000734099999995!2d-136.8543216!5e0!3m2!1sen!2sca!4v1756045103082!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
